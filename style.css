@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&family=Dancing+Script:wght@600;700&display=swap');
+
+body {
+    background-image: url('./assets/bokeh.jpg');
+    /* se acuerdan cómo era el tema con el padding? arriba, costados */
+    padding: 0 3%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+nav {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.699);
+    position: sticky;
+    top: 0;
+    margin: -1% -4%;
+    display: flex;
+}
+
+.logo {
+    height: 2.5em;
+    margin-top: 0.5em;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    font-family: 'STIX Two Math', serif;
+    font-size: 1.1em;
+}
+
+.header img {
+    width: 60%;
+    margin: 2%;
+    /* box shadow es así: eje x, eje y, blur, spread, color */
+}
+
+.header .headerTexto {
+    flex-direction: column;
+    display: flex;
+    margin: 0 5%;
+}
+
+.pasos {
+    display: flex;
+    margin: 2% 15%;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.pasos p {
+    font-family: 'STIX Two Math', serif;
+    font-size: 1em;
+    margin: 2%;   
+}
+
+.pasos img {
+    /* este es uno de los casos en que deberíamos usar pixeles... cada img es de diferente tamaño! */
+    width: 200px;
+    border-radius: 40px;
+    /* box shadow es así: eje x, eje y, blur, spread, color */
+    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.226);
+}
+
+.copy {
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin: auto;
+}
+
+.copy a {
+    text-decoration: none;
+    color: rgb(250, 121, 121);
+    font-weight: 700;
+}
+
+.copy a:hover {
+    color: rgb(180, 0, 0);
+}
